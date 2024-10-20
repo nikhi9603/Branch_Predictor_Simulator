@@ -38,7 +38,9 @@ int main(int argc, char* argv[])
         BP_Simulator bp_sim = BP_Simulator(bp_type, m, trace_fileName, n);
         bp_sim.simulate();
 
-        bp_sim.printSimulationOutput();    
+        bp_sim.printSimulationOutput();
+        //BP_Statistics bp_stats = bp_sim.getStatistics();    
+        //cout << "MisPrediction rate: " << bp_stats.branch_mispred_rate * 100 << "%\n" << endl;
     }
     else
     {
